@@ -1,66 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>System Breach</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      background-color: black;
-      font-family: monospace;
-      color: lime;
-      overflow: hidden;
-      cursor: none;
-    }
-
-    .center {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 4vw;
-    }
-
-    p {
-      font-size: 2vw;
-    }
-
-    .blinker {
-      animation: blink 1s step-start infinite;
-    }
-
-    @keyframes blink {
-      50% { opacity: 0; }
-    }
-  </style>
-</head>
-<body>
-  <div class="center">
-    <h1>⚠ SYSTEM BREACH DETECTED ⚠</h1>
-    <p>Encrypting files...<span class="blinker">█</span></p>
-  </div>
-
-  <script>
-    document.addEventListener("contextmenu", e => e.preventDefault());
-    document.addEventListener("keydown", e => e.preventDefault());
-
-    window.onbeforeunload = () => "Do not close this window.";
-
-    setTimeout(() => {
-      alert("All files encrypted. Pay ransom.");
-    }, 10000);
-  </script>
-</body>
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+  </body>
 </html>
